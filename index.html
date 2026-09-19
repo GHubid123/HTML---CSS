@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harshita Jangra - My Portfolio</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Arial, sans-serif; background-color: #f4f7fb; color: #252b35; line-height: 1.6; }
+    header { background-color: #24476b; color: white; padding: 22px 10%; }
+    nav { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+    nav h2 { margin: 0; font-size: 24px; }
+    nav a { color: white; text-decoration: none; margin-left: 18px; font-size: 15px; }
+    nav a:hover { text-decoration: underline; }
+    .hero { background-color: #dcecff; padding: 70px 10%; min-height: 420px; display: flex; align-items: center; }
+    .hero-text { max-width: 720px; }
+    .hero h1 { font-size: 46px; color: #1e3d5b; margin: 0 0 10px; }
+    .hero h1 span { color: #d26a3a; }
+    .hero p { font-size: 18px; margin-top: 10px; }
+    .button { display: inline-block; background-color: #d26a3a; color: white; padding: 10px 17px; border-radius: 4px; text-decoration: none; margin-top: 14px; }
+    section { padding: 55px 10%; }
+    section:nth-child(even) { background-color: white; }
+    .heading { color: #24476b; font-size: 30px; margin-top: 0; border-bottom: 2px solid #d26a3a; display: inline-block; padding-bottom: 5px; }
+    .about-box, .contact-box, .education-box, .extra-box { background: white; padding: 25px; border: 1px solid #d5dde7; border-radius: 8px; max-width: 900px; }
+    .about-box p, .extra-box p { max-width: 850px; }
+    .skills-list { display: flex; gap: 18px; flex-wrap: wrap; margin-top: 20px; }
+    .skill { background-color: #eef3f8; border: 1px solid #c8d6e5; border-radius: 7px; width: 190px; padding: 20px; text-align: center; }
+    .skill h3 { margin: 8px 0 4px; color: #24476b; }
+    .skill p { margin: 0; font-size: 14px; }
+    .education-box { background-color: #f9fbfd; }
+    .education-item { border-left: 4px solid #d26a3a; padding-left: 18px; margin: 20px 0; }
+    .education-item h3 { margin: 0; color: #24476b; }
+    .education-item p { margin: 5px 0; }
+    .details { display: grid; grid-template-columns: repeat(2, minmax(220px, 1fr)); gap: 10px 30px; margin-top: 15px; }
+    .contact-box a { color: #24476b; font-weight: bold; }
+    footer { text-align: center; background-color: #24476b; color: white; padding: 25px; font-size: 14px; }
+    @media (max-width: 650px) { nav { gap: 12px; } nav a { margin-left: 8px; } .hero { padding: 50px 8%; } section { padding: 40px 8%; } .hero h1 { font-size: 35px; } .details { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <h2>Harshita Jangra</h2>
+      <div>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <div class="hero-text">
+      <p>Hello, I am</p>
+      <h1>Harshita <span>Jangra</span></h1>
+      <p>I am a first year CSE (Cyber Security) student at Gurugram University. I am learning coding and exploring different fields of technology.</p>
+      <a class="button" href="#about">Know more about me</a>
+    </div>
+  </div>
+
+  <section id="about">
+    <h2 class="heading">About Me</h2>
+    <div class="about-box">
+      <p>I know the basics of HTML and CSS and I am interested in learning more about technology. My goal is to improve my programming skills and become a good technology professional.</p>
+      <p>I want to learn about <b>Artificial Intelligence</b> because it is changing many areas of life. I am also interested in <b>Cybersecurity</b> because protecting data and computers is very important. Web development interests me because it helps me create useful websites and projects.</p>
+      <p>I am still at the beginning of my journey, but I am ready to learn step by step and work on more projects.</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2 class="heading">My Skills</h2>
+    <div class="skills-list">
+      <div class="skill"><h3>Python</h3><p>Basic programming and logic</p></div>
+      <div class="skill"><h3>HTML</h3><p>Making the structure of web pages</p></div>
+      <div class="skill"><h3>CSS</h3><p>Adding style to websites</p></div>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2 class="heading">Academic Qualifications</h2>
+    <div class="education-box">
+      <div class="education-item"><h3>B.Tech CSE (Cyber Security)</h3><p>Gurugram University</p><p><b>Currently studying in first year</b></p></div>
+      <div class="education-item"><h3>Senior Secondary</h3><p><b>Percentage: 96.2%</b></p></div>
+      <div class="education-item"><h3>Matriculation</h3><p><b>Percentage: 98.6%</b></p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="heading">Extra-curricular Activities</h2>
+    <div class="extra-box">
+      <ul><li>House Captain in Class 12th</li><li>Interested in sports like badminton</li></ul>
+      <p>These activities have helped me to learn about teamwork, leadership and discipline.</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="heading">Connect Me</h2>
+    <div class="contact-box">
+      <div class="details">
+        <div><b>Mobile:</b> <a href="tel:+917015737706">+91 7015737706</a></div>
+        <div><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/harshita-jangra-420996328/" target="_blank" rel="noopener noreferrer">Ckick here to open LinkedIn profile</a></div>
+        <div><b>GitHub:</b> <a href="https://github.com/GHubid123" target="_blank" rel="noopener noreferrer">Click here to open GitHub</a></div>
+      </div>
+    </div>
+  </section>
+
+  <footer><p>© 2026 Harshita Jangra | Portfolio</p></footer>
+</body>
+</html>
